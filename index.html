@@ -82,7 +82,13 @@
         <div class="about-text">
           <p>Hello, my name is Joe Barbieri. First off, thank-you for taking the time to check out my digital portfolio. Most of the work here was complied throughout my undergraduate years at UC Denver where I graduated with a degree in writing.</p>
           <p>In my studies, I covered a wide array of writing styles and formats. Though I am most practiced in journalistic writing and creative writing, I was also taught basic skills in both technical writing and scientific writing. I am familiar in writing APA, MLA, and Chicago style papers. I am confident in my flexibility and adaptability across any form of writing and I am always seeking a position where I can apply my skills effectively.</p>
-          <h5> Email: jdbarbieri@outlook.com<h5>
+          <h5>
+            <a href="jdbarbieri@outlook.com" style="color: rgba(65, 74, 82, 0.9);" onclick="copyEmail(event)">
+              Email</i>
+            </a>
+          <h5>
+          <h5> <a href="https://www.linkedin.com/in/joseph-barbieri-b89049350/" target="_blank" style="color: rgba(65, 74, 82, 0.9);">Linkedin</a> <h5>
+          <h5> <a href="https://gamerant.com/author/joseph-barbieri/" target="_blank" style="color: rgba(65, 74, 82, 0.9);" >Game Rant Portfolio</a> <h5>
           <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a> </div>
       </div>
     </div>
@@ -406,7 +412,7 @@
 
         <div class="col-sm-6 col-md-3 col-lg-3 Research">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="Works/Research/slaverypaper.pdf" target="_blank">
+            <div class="hover-bg"> <a href="Works/Research/SlaveryPaper.pdf" target="_blank">
               <div class="hover-text">
                 <h4>Slavery: Relations in Roman Society </h4>
               </div>
@@ -436,7 +442,7 @@
 
         <div class="col-sm-6 col-md-3 col-lg-3 Scientific">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="Works/Research/IMRAD.pdf" target="_blank">
+            <div class="hover-bg"> <a href="Works/Scientific/IMRAD.pdf" target="_blank">
               <div class="hover-text">
                 <h4>Quantifying Public Trust </h4>
               </div>
@@ -446,7 +452,7 @@
 
         <div class="col-sm-6 col-md-3 col-lg-3 Scientific">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="Works/Research/GrantProposal.pdf" target="_blank">
+            <div class="hover-bg"> <a href="Works/Scientific/GrantProposal.pdf" target="_blank">
               <div class="hover-text">
                 <h4>UROP Grant Proposal </h4>
               </div>
@@ -456,7 +462,7 @@
 
         <div class="col-sm-6 col-md-3 col-lg-3 Scientific">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="Works/Research/litReview.pdf" target="_blank">
+            <div class="hover-bg"> <a href="Works/Scientific/LitReview.pdf" target="_blank">
               <div class="hover-text">
                 <h4>Application of Surgical Robotics </h4>
               </div>
@@ -474,7 +480,24 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/joseph-barbieri-b89049350/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li>
+            <a href="jdbarbieri@outlook.com"  onclick="copyEmail(event)">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          
+          <script>
+            function copyEmail(event) {
+              event.preventDefault(); // Prevent default link behavior
+              const email = "jdbarbieri@outlook.com"; // Replace with your email
+              navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard!");
+              }).catch(err => {
+                console.error("Failed to copy:", err);
+              });
+            }
+          </script>
         </ul>
       </div>
     </div>
